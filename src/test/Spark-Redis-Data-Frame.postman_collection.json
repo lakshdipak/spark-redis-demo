@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "8025d7a0-de9c-4ec9-bb91-45794c8d6c71",
+		"name": "Spark-Redis-Data-Frame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SavePersonsDataFrame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t\n\t[\n\t\t{\n            \"id\": \"12345\",\n\t\t\t\"name\":\"Anand1\",\n\t\t\t\"age\":\"33\"\n\t\t},\n\t\t{\n            \"id\": \"12346\",\n\t\t\t\"name\":\"Neelam1\",\n\t\t\t\"age\":\"28\"\n\t\t},\n\t\t{\n            \"id\": \"12347\",\n\t\t\t\"name\":\"Dipak\",\n\t\t\t\"age\":\"32\"\n\t\t},\n\t\t{\n            \"id\": \"12348\",\n\t\t\t\"name\":\"Mukesh\",\n\t\t\t\"age\":\"30\"\n\t\t}\n\t]\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createPerson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createPerson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WordCountGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadPersonsDataFrame",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getPerson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getPerson"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fdad1b37-16b7-407a-a47d-86f0990b0d36",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6946f829-4e29-4a2f-892d-48f60709d502",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
